@@ -10,7 +10,7 @@ window.CLINIC_CONFIG = Object.freeze({
   registration: '',
   whatsapp: '5511954510922',
   instagram: 'https://www.instagram.com/implansorriamais/',
-  address: '',
+  address: 'Av. Marginal Direita, 420 · Jardim Paulista · Barueri, SP',
   hours: '',
-  mapUrl: ''
+  mapUrl: 'https://www.google.com/maps/search/?api=1&query=Av.+Marginal+Direita+420+Jardim+Paulista+Barueri+SP'
 });

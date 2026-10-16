@@ -3,16 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#253f4c">
+  <meta name="theme-color" content="#152e3c">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="description" content="Seu sorriso, mais você. Conheça a Implansorria Mais e converse sobre implantes, próteses, facetas e ortodontia em Barueri.">
-  <title>Implansorria Mais — Seu sorriso, mais você.</title>
+  <meta name="description" content="Implansorria Mais, em Barueri. Um novo olhar para o seu sorriso, com a Dra. Ana Paula Faria. Conheça os tratamentos e agende sua avaliação.">
+  <meta property="og:title" content="Implansorria Mais — Volte a sorrir. Por inteiro.">
+  <meta property="og:description" content="Um cuidado que começa com você. Conheça a Implansorria Mais, em Barueri.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pedrooeditor.github.io/inplantsorria/">
+  <meta property="og:image" content="https://pedrooeditor.github.io/inplantsorria/assets/hero.webp">
+  <title>Implansorria Mais — Volte a sorrir. Por inteiro.</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
   <script defer src="site.config.js"></script>
   <script defer src="app.js"></script>
 </head>
-<body>
+<body id="inicio">
   <a class="skip-link" href="#principal">Ir para o conteúdo</a>
   <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
@@ -24,78 +29,97 @@
     <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
   </defs></svg>
 
-  <header class="header" id="inicio">
+
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#inicio" aria-label="Implansorria Mais, início">
-        <svg class="brand-symbol" viewBox="0 0 44 44" fill="none" aria-hidden="true"><path d="M5 17C5 3 39 3 39 17v11C39 43 5 43 5 28V17Z"/><path d="M12 17v12m10-16v19m10-15v12M10 27q12 14 24 0"/></svg>
-        <span><strong>implansorria<span> mais</span></strong><small>ODONTOLOGIA COM UM OLHAR PARA VOCÊ</small></span>
-      </a>
-      <nav class="navigation" id="navigation" aria-label="Navegação principal">
-        <a href="#tratamentos">Seu sorriso</a><a href="#experiencia">Nosso cuidado</a><a href="#duvidas">Dúvidas</a>
-      </nav>
-      <button class="button button-outline header-cta" data-contact data-source="cabeçalho">Agendar avaliação <svg class="icon"><use href="#i-arrow"/></svg></button>
+      <a class="brand" href="#inicio" aria-label="Implansorria Mais, início"><svg viewBox="0 0 50 56" fill="none" aria-hidden="true"><path d="M9 24C-1 8 11 2 24 9 39 0 52 9 42 26c-3 5-5 19-9 21-4 2-3-16-9-16s-6 18-10 15c-3-3-3-17-5-22Z"/><path d="M8 12c10 8 17 8 29-2M9 48c12 7 24 6 34-2M39 37v10m-5-5h10"/></svg><span><strong>implansorria<span>+</span></strong><small>ODONTOLOGIA ESPECIALIZADA</small></span></a>
+      <nav class="navigation" id="navigation" aria-label="Navegação principal"><a href="#tratamentos">Seu sorriso</a><a href="#experiencia">A clínica</a><a href="#universo">Nosso universo</a><a href="#duvidas">Dúvidas</a></nav>
+      <button class="header-cta" data-contact data-source="cabeçalho">Agendar avaliação <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
       <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menu"><span></span><span></span></button>
     </div>
   </header>
-
   <main id="principal">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> UM NOVO OLHAR PARA O SEU SORRISO</p>
-        <h1 id="hero-title">Seu sorriso,<br><em>mais você.</em><span class="title-spark" aria-hidden="true">✳</span></h1>
-        <p class="hero-description">Voltar a sorrir em uma foto. Conversar à vontade. Sentir-se bem com você. <strong>O seu próximo capítulo começa com cuidado.</strong></p>
-        <div class="hero-actions"><button class="button button-primary" data-contact data-source="hero">Quero cuidar do meu sorriso <svg class="icon"><use href="#i-arrow"/></svg></button><a class="link-arrow" href="#tratamentos">Conhecer os tratamentos <svg class="icon"><use href="#i-down"/></svg></a></div>
-        <div class="hero-reassurance"><span class="reassurance-icon"><svg class="icon"><use href="#i-chat"/></svg></span><span>O primeiro passo é uma conversa.<br><strong>Fale diretamente com a equipe pelo WhatsApp.</strong></span></div>
-        <div class="hero-location"><svg class="icon"><use href="#i-pin"/></svg><span data-location>Barueri, SP</span><span class="location-rule"></span><span data-professional>Dra. Ana Paula Faria</span></div>
+    <section class="hero-shell" aria-labelledby="hero-title">
+      <div class="hero-light" aria-hidden="true"></div>
+      <div class="container hero">
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> ODONTOLOGIA COM UM OLHAR PARA VOCÊ</p>
+          <h1 id="hero-title">Volte a<br><span class="hero-word">sorrir.<svg viewBox="0 0 430 50" aria-hidden="true"><path d="M5 10Q210 76 422 5"/></svg></span><br><em>Por inteiro.</em></h1>
+          <p class="hero-description">Na foto espontânea. Na conversa de perto.<br>Nos momentos que merecem <strong>mais de você.</strong></p>
+          <div class="hero-actions"><button class="button button-gold" data-contact data-source="hero" ><span>Quero cuidar do meu sorriso</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><a href="#tratamentos" class="text-link">Descubra seu próximo passo <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a></div>
+          <p class="hero-microcopy">Uma conversa pode ser o começo de uma nova história.</p>
+        </div>
+        <figure class="hero-visual" aria-label="Conceito visual do sorriso: retrato ilustrativo">
+          <div class="orbit orbit-one" aria-hidden="true"></div><div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-portrait"><img src="assets/hero.webp" width="1000" height="1250" alt="Retrato ilustrativo de uma mulher sorrindo naturalmente" fetchpriority="high"><span class="photo-caption">IMAGEM ILUSTRATIVA</span></div>
+          <svg class="smile-trail" viewBox="0 0 600 650" fill="none" aria-hidden="true"><defs><linearGradient id="trail-gold"><stop stop-color="#b69a60" stop-opacity="0"/><stop offset=".4" stop-color="#d5bc80"/><stop offset=".7" stop-color="#fff0bc"/><stop offset="1" stop-color="#bd9e63" stop-opacity="0"/></linearGradient></defs><path class="trail-base" d="M29 328C92 590 477 595 571 244"/><path class="trail-light" d="M29 328C92 590 477 595 571 244"/></svg>
+          <div class="portrait-label"><span class="tiny-star">✳</span><span>A beleza de um sorriso<br><em>que tem a sua essência.</em></span></div>
+          <div class="portrait-coordinate" aria-hidden="true">SAÚDE + ESTÉTICA + CONFIANÇA</div>
+        </figure>
+        <div class="hero-bottom"><span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-location>Barueri, SP</span></span><span data-professional>Dra. Ana Paula Faria</span><button class="motion-toggle" id="motion-toggle" aria-pressed="false"><span class="motion-icon" aria-hidden="true">Ⅱ</span><span id="motion-label">Pausar efeitos</span></button><a href="#manifesto" class="scroll-cue" aria-label="Explorar a página">EXPLORE <svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a></div>
       </div>
-      <figure class="hero-visual">
-        <div class="photo-frame"><img src="assets/hero.webp" alt="Retrato editorial ilustrativo de uma mulher sorrindo à luz natural" width="1000" height="1250" fetchpriority="high"><span class="photo-caption">IMAGEM ILUSTRATIVA · CONCEITO VISUAL</span></div>
-        <div class="hero-stamp" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="stamp-path" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1-88 0"/></defs><text><textPath href="#stamp-path">SAÚDE • ESTÉTICA • VOCÊ • SAÚDE • ESTÉTICA • VOCÊ • </textPath></text></svg><span>✳</span></div>
-        <figcaption class="photo-note"><span class="note-line"></span><p>Natural no sorriso.<br><em>Único em você.</em></p><svg class="icon"><use href="#i-spark"/></svg></figcaption>
-      </figure>
+      <span class="hero-watermark" aria-hidden="true">sorria mais.</span>
     </section>
 
-    <div class="specialties-strip"><div class="container specialties-inner"><span>Implantes dentários</span><i>✳</i><span>Próteses</span><i>✳</i><span>Facetas</span><i>✳</i><span>Ortodontia</span><i>✳</i><span>Estética do sorriso</span></div></div>
+    <section class="manifesto section container" id="manifesto" aria-labelledby="manifesto-title">
+      <p class="eyebrow"><span class="section-number">01 /</span> NÃO É SÓ SOBRE DENTES</p>
+      <h2 id="manifesto-title" class="manifesto-text">É sobre se sentir <em>à vontade.</em><br>É sobre voltar a ser <em>você.</em></h2>
+      <div class="manifesto-bottom"><span class="manifesto-star" aria-hidden="true">✳</span><p>Seu sorriso faz parte de quem você é. E o cuidado com ele<br class="desktop-break"> começa entendendo a sua história, seus desejos e o seu tempo.</p></div>
+    </section>
 
-    <section class="treatments section container" id="tratamentos" aria-labelledby="treatments-title">
-      <div class="section-heading"><div><p class="eyebrow"><span class="section-number">01</span> SEU PONTO DE PARTIDA</p><h2 id="treatments-title">O que faria você<br><em>sorrir mais?</em></h2></div><p class="section-lead">Você não precisa chegar com todas as respostas. Comece pelo que deseja para o seu sorriso.</p></div>
-      <div class="treatment-explorer">
-        <div class="treatment-tabs" role="tablist" aria-label="O que você procura" aria-orientation="vertical">
-          <button role="tab" class="treatment-tab" id="goal-0" aria-controls="treatment-panel" aria-selected="true" tabindex="0" data-goal="0"><span class="tab-number">01</span><span>Recuperar meu sorriso<small>Implantes & próteses</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
-          <button role="tab" class="treatment-tab" id="goal-1" aria-controls="treatment-panel" aria-selected="false" tabindex="-1" data-goal="1"><span class="tab-number">02</span><span>Valorizar meu sorriso<small>Facetas & estética</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
-          <button role="tab" class="treatment-tab" id="goal-2" aria-controls="treatment-panel" aria-selected="false" tabindex="-1" data-goal="2"><span class="tab-number">03</span><span>Alinhar meus dentes<small>Ortodontia</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
-          <button role="tab" class="treatment-tab" id="goal-3" aria-controls="treatment-panel" aria-selected="false" tabindex="-1" data-goal="3"><span class="tab-number">04</span><span>Entender as possibilidades<small>Ainda tenho dúvidas</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
-        </div>
-        <div class="treatment-panel" id="treatment-panel" role="tabpanel" aria-labelledby="goal-0" tabindex="0">
-          <div class="treatment-art" aria-hidden="true"><svg viewBox="0 0 350 220" fill="none"><defs><linearGradient id="smile-metal" x2="1" y2="1"><stop stop-color="#d4bb87"/><stop offset=".5" stop-color="#f5e9cb"/><stop offset="1" stop-color="#a68a56"/></linearGradient></defs><ellipse cx="175" cy="106" rx="127" ry="61" transform="rotate(-21 175 106)" stroke="#c8b68f" stroke-width=".7"/><circle cx="175" cy="110" r="86" stroke="#526a78" stroke-width=".7"/><path d="M100 90c18 70 130 70 150 0-2 120-146 120-150 0Z" fill="url(#smile-metal)"/><path d="M123 66q53 50 103 0" stroke="#e7d6ae" stroke-width="2" stroke-linecap="round"/><circle cx="274" cy="62" r="4" fill="#d4bb87"/></svg><span id="panel-count">01 / 04</span></div>
-          <p class="eyebrow panel-eyebrow" id="panel-label">IMPLANTES & PRÓTESES</p><h3 id="panel-title">Um novo capítulo.<br>Novos motivos para sorrir.</h3><p class="panel-description" id="panel-description">Se a falta de um ou mais dentes faz parte da sua história, uma avaliação é o começo para conversar sobre as possibilidades de cuidado.</p><div class="panel-tags" id="panel-tags"><span>Implantes dentários</span><span>Próteses dentárias</span></div><button class="button button-light" id="panel-contact" data-contact data-topic="Implantes e próteses" data-source="tratamentos">Conversar sobre esse cuidado <svg class="icon"><use href="#i-arrow"/></svg></button><p class="panel-disclaimer">A indicação de tratamento depende de avaliação profissional.</p>
+    <section class="treatments" id="tratamentos" aria-labelledby="treatments-title">
+      <div class="container section">
+        <div class="section-heading" data-reveal><div><p class="eyebrow"><span class="section-number">02 /</span> ENCONTRE SEU PONTO DE PARTIDA</p><h2 id="treatments-title">Cada sorriso,<br><em>uma possibilidade.</em></h2></div><p class="section-lead">O que você gostaria de sentir<br>ao sorrir? Escolha um caminho<br>e vamos conversar sobre ele.</p></div>
+        <div class="treatment-explorer">
+          <div class="treatment-tabs" role="tablist" aria-label="Seu objetivo para o sorriso" aria-orientation="vertical">
+            <button role="tab" class="treatment-tab" id="goal-0" aria-controls="treatment-panel" aria-selected="true" tabindex="0" data-goal="0"><span class="tab-number">01</span><span>Voltar a sorrir<small>Implantes & próteses</small></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button role="tab" class="treatment-tab" id="goal-1" aria-controls="treatment-panel" aria-selected="false" tabindex="-1" data-goal="1"><span class="tab-number">02</span><span>Revelar minha essência<small>Facetas & estética</small></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button role="tab" class="treatment-tab" id="goal-2" aria-controls="treatment-panel" aria-selected="false" tabindex="-1" data-goal="2"><span class="tab-number">03</span><span>Encontrar harmonia<small>Ortodontia</small></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button role="tab" class="treatment-tab" id="goal-3" aria-controls="treatment-panel" aria-selected="false" tabindex="-1" data-goal="3"><span class="tab-number">04</span><span>Descobrir meu caminho<small>Quero orientação</small></span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          </div>
+          <div class="treatment-panel" id="treatment-panel" role="tabpanel" aria-labelledby="goal-0" tabindex="0" data-active="0">
+            <div class="treatment-art" aria-hidden="true">
+              <svg viewBox="0 0 420 220" fill="none"><defs><linearGradient id="art-gold" x1="0" x2="1" y2="1"><stop stop-color="#b99450"/><stop offset=".48" stop-color="#f4e3b6"/><stop offset="1" stop-color="#8d6b34"/></linearGradient></defs><ellipse class="art-orbit" cx="210" cy="112" rx="144" ry="66" transform="rotate(-15 210 112)"/><ellipse class="art-orbit" cx="210" cy="112" rx="104" ry="91" transform="rotate(25 210 112)"/>
+              <g class="art-shape shape-0"><path d="M174 30c-36-17-55 12-39 43 7 14 9 47 19 47 11 0 10-34 20-34s10 34 20 34c11 0 12-31 20-47 16-32-5-60-40-43Z" stroke="url(#art-gold)" stroke-width="2" transform="translate(36 0)"/><path d="M190 135h40l-8 51-12 13-12-13-8-51Zm0 11 38-7m-36 20 34-7m-33 20 31-7m-28 20 26-7" stroke="url(#art-gold)" stroke-width="2"/></g>
+              <g class="art-shape shape-1"><path d="M113 88q97 98 194 0c-13 139-181 139-194 0Z" fill="url(#art-gold)"/><path d="m162 41 7 15 17 3-14 10-3 17-8-15-17-4 14-10 4-16Zm110-7 5 10 11 3-10 6-2 12-5-10-12-3 10-7 3-11Z" stroke="#d7bc80"/></g>
+              <g class="art-shape shape-2" stroke="url(#art-gold)" stroke-width="2"><rect x="118" y="67" width="42" height="77" rx="16" transform="rotate(-12 139 105)"/><rect x="165" y="58" width="42" height="88" rx="16"/><rect x="213" y="58" width="42" height="88" rx="16"/><rect x="260" y="67" width="42" height="77" rx="16" transform="rotate(12 281 105)"/><path d="M98 103q112 67 224 0M130 107h18m30 5h18m29 0h18m29-5h18"/><circle cx="139" cy="107" r="7"/><circle cx="187" cy="112" r="7"/><circle cx="234" cy="112" r="7"/><circle cx="281" cy="107" r="7"/></g>
+              <g class="art-shape shape-3" stroke="url(#art-gold)" stroke-width="2"><circle cx="210" cy="111" r="69"/><path d="M175 122q35 48 70 0M182 86h1m54 0h1" stroke-linecap="round" stroke-width="5"/><path d="m295 42 5 12 13 4-12 5-5 13-5-12-12-5 12-4 4-13Z"/></g>
+              <circle class="art-point" cx="350" cy="76" r="4" fill="#e2c68b"/>
+              </svg><span id="panel-count">01 / 04</span>
+            </div>
+            <p class="eyebrow panel-eyebrow" id="panel-label">IMPLANTES & PRÓTESES</p><h3 id="panel-title">Um novo capítulo.<br>Novos motivos para sorrir.</h3><p class="panel-description" id="panel-description">Se a falta de um ou mais dentes faz parte da sua história, uma avaliação é o começo para conversar sobre as possibilidades de cuidado.</p><div class="panel-tags" id="panel-tags"><span>Implantes dentários</span><span>Próteses dentárias</span></div><button class="button button-gold" id="panel-contact" data-contact data-topic="Implantes e próteses" data-source="tratamentos"><span>Conversar sobre esse cuidado</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><p class="panel-disclaimer">A indicação de tratamento depende de avaliação profissional.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="care-section" id="experiencia" aria-labelledby="care-title"><div class="container care-grid">
-      <div class="care-manifesto"><p class="eyebrow">O CUIDADO QUE FAZ SENTIDO PARA VOCÊ</p><div class="manifesto-words"><span><small>01</small>Escutar.</span><span><small>02</small>Entender.</span><span><small>03</small>Planejar.</span><span><small>04</small><em>Cuidar.</em><svg class="icon"><use href="#i-spark"/></svg></span></div><div class="manifesto-footer"><span>CADA PESSOA, UMA HISTÓRIA.</span><span>✳</span></div></div>
-      <div class="care-copy"><p class="eyebrow"><span class="section-number">02</span> MUITO ALÉM DO PROCEDIMENTO</p><h2 id="care-title">Antes do sorriso,<br>vem <em>você.</em></h2><p>O que você deseja mudar? O que gostaria de preservar? Quais dúvidas ainda te fazem adiar o primeiro passo?</p><p>Seu momento merece fazer parte da conversa. Conheça a Implansorria Mais e descubra, junto com a profissional, as possibilidades para o seu caso.</p><div class="professional-signature"><div class="signature-mark" aria-hidden="true">Af</div><div><strong data-professional>Dra. Ana Paula Faria</strong><span>Implansorria Mais · <span data-location>Barueri, SP</span></span><span id="professional-registration" hidden></span></div></div><a class="link-arrow" data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer">Conheça nosso universo no Instagram <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    <section class="care-section section" id="experiencia" aria-labelledby="care-title"><div class="container care-grid">
+      <div class="care-art" data-reveal><div class="care-emblem" aria-hidden="true"><span>i<span>+</span></span><svg viewBox="0 0 400 400"><circle cx="200" cy="200" r="170"/><path d="M56 200q144 185 288 0"/></svg></div><div class="care-caption"><span class="eyebrow">O NOSSO JEITO DE CUIDAR</span><p>Escutar.<br>Entender.<br><em>Cuidar.</em></p></div><span class="care-detail" aria-hidden="true">CADA PESSOA. UMA HISTÓRIA.</span></div>
+      <div class="care-copy" data-reveal><p class="eyebrow"><span class="section-number">03 /</span> PRAZER, IMPLANSORRIA MAIS</p><h2 id="care-title">Antes do sorriso,<br>vem <em>você.</em></h2><p>O que você gostaria de mudar? O que faz questão de preservar? O que ainda te faz adiar o primeiro passo?</p><p>Aqui, a conversa começa com essas perguntas. Conheça a Implansorria Mais e descubra as possibilidades para o seu caso, junto com a profissional.</p><div class="professional-signature"><span class="signature-mark" aria-hidden="true">Af</span><div><strong data-professional>Dra. Ana Paula Faria</strong><span>Implansorria Mais · <span data-location>Barueri, SP</span></span><span id="professional-registration" hidden></span></div></div><button class="text-link" data-contact data-source="clínica">Vamos nos conhecer? <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
     </div></section>
 
-    <section class="journey section container" aria-labelledby="journey-title"><div class="section-heading"><div><p class="eyebrow"><span class="section-number">03</span> MAIS SIMPLES DO QUE PARECE</p><h2 id="journey-title">Seu próximo passo<br>pode ser <em>pequeno.</em></h2></div><p class="section-lead">Você traz a sua história.<br>A conversa começa a partir dela.</p></div><ol class="journey-steps"><li><div class="journey-step-top"><span>01</span><svg class="icon"><use href="#i-chat"/></svg></div><h3>Vamos conversar</h3><p>Escolha o assunto que mais combina com você e fale com a equipe pelo WhatsApp.</p></li><li><div class="journey-step-top"><span>02</span><svg class="icon"><use href="#i-smile"/></svg></div><h3>Conhecer o seu sorriso</h3><p>Consulte os horários disponíveis e combine uma avaliação com a clínica.</p></li><li><div class="journey-step-top"><span>03</span><svg class="icon"><use href="#i-spark"/></svg></div><h3>Entender o caminho</h3><p>Converse sobre possibilidades, dúvidas e um plano de cuidado para o seu caso.</p></li></ol><div class="journey-cta"><p>Ainda não sabe qual tratamento procurar?<br><strong>Tudo bem. Podemos começar por essa dúvida.</strong></p><button class="button button-outline" data-contact data-topic="Quero orientação" data-source="jornada">Quero dar o primeiro passo <svg class="icon"><use href="#i-arrow"/></svg></button></div></section>
+    <section class="journey section container" aria-labelledby="journey-title"><div class="section-heading" data-reveal><div><p class="eyebrow"><span class="section-number">04 /</span> O COMEÇO PODE SER LEVE</p><h2 id="journey-title">Um passo de cada vez.<br><em>O primeiro é seu.</em></h2></div><p class="section-lead">Sem precisar ter todas as respostas.<br>A gente começa com uma conversa.</p></div><ol class="journey-steps"><li data-reveal><span class="journey-number">01</span><h3>Conte a sua história</h3><p>Escolha o que você procura e fale diretamente com a equipe pelo WhatsApp.</p></li><li data-reveal><span class="journey-number">02</span><h3>Vamos nos conhecer</h3><p>Consulte os horários disponíveis e combine a sua avaliação na clínica.</p></li><li data-reveal><span class="journey-number">03</span><h3>Encontre seu caminho</h3><p>Entenda as possibilidades e converse sobre um plano de cuidado para você.</p></li></ol></section>
 
-    <section class="faq-section" id="duvidas" aria-labelledby="faq-title"><div class="container faq-grid"><div class="faq-intro"><p class="eyebrow"><span class="section-number">04</span> CONVERSA ABERTA</p><h2 id="faq-title">Pode<br><em>perguntar.</em></h2><p>Algumas respostas para deixar o primeiro contato mais leve.</p><button class="link-arrow text-button" data-contact data-intent="Tirar uma dúvida" data-source="dúvidas">Minha dúvida é outra <svg class="icon"><use href="#i-arrow"/></svg></button></div><div class="faq-list">
-      <details open><summary>Preciso saber qual tratamento quero?<span aria-hidden="true"></span></summary><div><p>Não precisa. Você pode começar contando o que gostaria de mudar ou entender melhor. A indicação de tratamento depende de uma avaliação profissional.</p></div></details>
-      <details><summary>Como funciona o agendamento?<span aria-hidden="true"></span></summary><div><p>O botão de agendamento abre uma conversa no WhatsApp. A equipe informa a disponibilidade e confirma o dia e o horário diretamente com você.</p></div></details>
-      <details><summary>Posso conversar antes de marcar uma avaliação?<span aria-hidden="true"></span></summary><div><p>Sim. Selecione “Tirar uma dúvida” no contato e conte o que deseja esclarecer. A conversa pelo WhatsApp não substitui a avaliação clínica.</p></div></details>
-      <details><summary>Como consulto valores e formas de pagamento?<span aria-hidden="true"></span></summary><div><p>Peça essas informações à equipe. O orçamento do tratamento deve considerar a avaliação e o planejamento do seu caso.</p></div></details>
-      <details><summary>Onde posso conhecer melhor a clínica?<span aria-hidden="true"></span></summary><div><p>Acompanhe as publicações da Implansorria Mais no <a data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer">Instagram</a> e converse com a equipe para combinar uma visita.</p></div></details>
+    <section class="social-section section" id="universo" aria-labelledby="social-title"><div class="container"><div class="section-heading" data-reveal><div><p class="eyebrow"><span class="section-number">05 /</span> CUIDADO QUE ACONTECE DE VERDADE</p><h2 id="social-title">Muito prazer.<br><em>Somos nós.</em></h2></div><a class="instagram-profile text-link" data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer">@implansorriamais <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a></div><div class="social-grid">
+      <a class="social-card social-portrait" data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer" aria-label="Conheça as conversas da clínica no Instagram"><div class="social-image"><img src="assets/instagram-reference.png" alt="Publicação do Instagram da clínica: profissional conversando com a câmera" width="1747" height="955" loading="lazy"></div><span class="social-card-label"><span>Gente que cuida de gente.</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="social-tag">CONVERSAS</span></a>
+      <a class="social-card social-care" data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer" aria-label="Conheça o dia a dia da clínica no Instagram"><div class="social-image"><img src="assets/instagram-reference.png" alt="Publicação do Instagram da clínica mostrando atendimento odontológico" width="1747" height="955" loading="lazy"></div><span class="social-card-label"><span>O cuidado, de perto.</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="social-tag">DIA A DIA</span></a>
+      <a class="social-card social-invite" data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer"><span class="social-invite-top">TEM MAIS DA GENTE POR LÁ <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span><span class="social-invite-main">Entre.<br>Conheça.<br><em>Sorria.</em></span><span class="social-invite-bottom">Nos acompanhe no Instagram.<span aria-hidden="true">✳</span></span></a>
+    </div><p class="social-source">Imagens do perfil da clínica, fornecidas para esta apresentação.</p></div></section>
+
+    <section class="faq-section section container" id="duvidas" aria-labelledby="faq-title"><div class="faq-grid"><div class="faq-intro" data-reveal><p class="eyebrow"><span class="section-number">06 /</span> CONVERSA ABERTA</p><h2 id="faq-title">Pode<br><em>perguntar.</em></h2><p>Informação também faz parte<br>de se sentir à vontade.</p><button class="text-link" data-contact data-intent="Tirar uma dúvida" data-source="dúvidas">Minha dúvida é outra <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div><div class="faq-list">
+      <details open><summary>Preciso saber qual tratamento quero?<span aria-hidden="true"></span></summary><p>Não precisa. Você pode começar contando o que gostaria de mudar ou entender melhor. A indicação de tratamento depende de uma avaliação profissional.</p></details>
+      <details><summary>Como funciona o agendamento?<span aria-hidden="true"></span></summary><p>O botão de agendamento leva ao WhatsApp. A equipe informa a disponibilidade e confirma o dia e o horário diretamente com você.</p></details>
+      <details><summary>Posso tirar dúvidas antes de marcar?<span aria-hidden="true"></span></summary><p>Sim. Selecione “Tirar uma dúvida” no contato e conte o que deseja esclarecer. A conversa pelo WhatsApp não substitui a avaliação clínica.</p></details>
+      <details><summary>Como consulto valores e formas de pagamento?<span aria-hidden="true"></span></summary><p>Peça essas informações à equipe. O orçamento do tratamento considera a avaliação e o planejamento do seu caso.</p></details>
+      <details><summary>Onde fica a clínica?<span aria-hidden="true"></span></summary><p>Na Av. Marginal Direita, 420, Jardim Paulista, em Barueri, SP. Converse com a equipe para confirmar as orientações de chegada e combinar sua avaliação.</p></details>
     </div></div></section>
 
-    <section class="final-section container" id="contato" aria-labelledby="contact-title"><div class="contact-card"><div class="contact-orbits" aria-hidden="true"><span></span><span></span><span></span></div><div class="contact-top"><p class="eyebrow">UM NOVO CAPÍTULO COMEÇA AQUI</p><svg class="icon"><use href="#i-spark"/></svg></div><div class="contact-main"><h2 id="contact-title">Tem um novo sorriso<br>nessa <em>conversa.</em></h2><div><p>Conte o que você procura.<br>Vamos pensar no próximo passo juntos.</p><button class="button button-gold" data-contact data-source="contato final">Vamos conversar no WhatsApp <svg class="icon"><use href="#i-arrow"/></svg><span class="contact-note">O agendamento é confirmado pela equipe.</span></div></div><div class="contact-bottom"><span><svg class="icon"><use href="#i-pin"/></svg><span data-location>Barueri, SP</span></span><a data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer">@implansorriamais <svg class="icon"><use href="#i-arrow"/></svg></a></div><div class="optional-info" id="clinic-info" hidden></div></div></section>
+    <section class="final-section" id="contato" aria-labelledby="contact-title"><div class="contact-orbits" aria-hidden="true"><span></span><span></span><span></span></div><div class="container contact-content"><p class="eyebrow">SUA PRÓXIMA HISTÓRIA COMEÇA AQUI</p><h2 id="contact-title">Dê espaço para<br><em>o seu sorriso.</em></h2><p>O primeiro passo não precisa ser grande.<br>Só precisa ser seu.</p><button class="button button-gold" data-contact data-source="contato final" ><span>Vamos conversar no WhatsApp</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button><span class="contact-note">Você conversa com a equipe. O horário é confirmado por ela.</span><div class="contact-location"><span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-location>Barueri, SP</span></span><div id="clinic-info" class="optional-info" hidden></div></div></div></section>
   </main>
-
-  <footer class="footer container"><div class="footer-main"><a class="brand" href="#inicio"><span><strong>implansorria<span> mais</span></strong><small>SEU SORRISO. SUA HISTÓRIA.</small></span></a><p>Um olhar para o sorriso.<br>Um cuidado com você.</p><a class="back-top" href="#inicio" aria-label="Voltar ao início"><svg class="icon"><use href="#i-down"/></svg></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Implansorria Mais.</span><span>Protótipo de apresentação · Informações sujeitas à validação.</span></div></footer>
-
-  <div class="mobile-contact"><span>Seu primeiro passo<br><strong>começa por aqui.</strong></span><button class="button button-primary" data-contact data-source="barra móvel">Agendar avaliação <svg class="icon"><use href="#i-arrow"/></svg></button></div>
-  <button class="floating-contact" data-contact data-source="botão flutuante" aria-label="Conversar pelo WhatsApp"><svg class="icon"><use href="#i-chat"/></svg></button>
-
+  <footer class="footer"><div class="container"><div class="footer-main"><a class="brand" href="#inicio" aria-label="Implansorria Mais, início"><svg viewBox="0 0 50 56" fill="none" aria-hidden="true"><path d="M9 24C-1 8 11 2 24 9 39 0 52 9 42 26c-3 5-5 19-9 21-4 2-3-16-9-16s-6 18-10 15c-3-3-3-17-5-22Z"/><path d="M8 12c10 8 17 8 29-2M9 48c12 7 24 6 34-2M39 37v10m-5-5h10"/></svg><span><strong>implansorria<span>+</span></strong><small>ODONTOLOGIA ESPECIALIZADA</small></span></a><p>Mais que um sorriso.<br>Mais de você.</p><a href="#inicio" class="back-top" aria-label="Voltar ao início"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> Implansorria Mais.</span><span>Protótipo de apresentação · Informações sujeitas à validação.</span><a data-instagram href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div></footer>
+  <div class="mobile-contact"><span>Vamos cuidar<br><strong>do seu sorriso?</strong></span><button class="button button-gold" data-contact data-source="barra móvel" ><span>Agendar avaliação</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+  <button class="floating-contact" data-contact data-source="botão flutuante" aria-label="Conversar pelo WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg><span>Vamos conversar</span></button>
   <dialog id="contact-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fechar agendamento">×</button><div class="dialog-progress" aria-hidden="true"><span class="active"></span><span></span></div><p class="eyebrow" id="step-label">01 / VAMOS COMEÇAR POR VOCÊ</p><h2 id="dialog-title" tabindex="-1">O que te faria<br><em>sorrir mais?</em></h2><p class="dialog-intro" id="dialog-intro">Escolha um assunto para começar a conversa.</p>
     <form id="contact-form"><fieldset id="topic-step"><legend class="sr-only">Assunto da conversa</legend><div class="topic-choices">
       <label><input type="radio" name="topic" value="Implantes e próteses"><span>Implantes e próteses<svg class="icon"><use href="#i-check"/></svg></span></label>
@@ -105,6 +129,7 @@
     </div><button class="button button-primary dialog-next" id="next-step" type="button" disabled>Continuar <svg class="icon"><use href="#i-arrow"/></svg></button></fieldset>
     <fieldset id="intent-step" hidden><legend class="sr-only">Como deseja começar</legend><p class="selected-topic" id="selected-topic"></p><div class="intent-choices"><label><input type="radio" name="intent" value="Agendar uma avaliação" checked><span>Quero agendar uma avaliação<small>Consultar horários com a equipe</small></span></label><label><input type="radio" name="intent" value="Tirar uma dúvida"><span>Quero tirar uma dúvida primeiro<small>Conversar sobre as possibilidades</small></span></label></div><a class="button button-primary whatsapp-link" id="whatsapp-link" target="_blank" rel="noopener noreferrer">Continuar no WhatsApp <svg class="icon"><use href="#i-chat"/></svg></a><p class="contact-unavailable" id="contact-unavailable" hidden>O canal de agendamento está sendo atualizado. Conheça a clínica pelo Instagram enquanto isso.</p><button class="dialog-back" id="previous-step" type="button">← Alterar assunto</button></fieldset></form><p class="dialog-footnote">Você revisa e envia a mensagem no WhatsApp.<br>Nenhuma informação é armazenada nesta página.</p>
   </dialog>
-  <noscript><div class="noscript-note">Para falar com a clínica, <a href="https://www.instagram.com/implansorriamais/" target="_blank" rel="noopener noreferrer">acesse o Instagram</a>. Ative o JavaScript para usar o agendamento guiado.</div></noscript>
+
+  <noscript><div class="noscript-note">Fale com a clínica pelo <a href="https://wa.me/5511954510922" target="_blank" rel="noopener noreferrer">WhatsApp</a>. Ative o JavaScript para explorar os tratamentos e o agendamento guiado.</div></noscript>
 </body>
 </html>
