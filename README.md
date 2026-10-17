@@ -1,6 +1,6 @@
-# Implansorria Mais
+# Implan Sorria Mais
 
-Landing page estática em português, inspirada no azul profundo e no dourado do Instagram da clínica. Direção editorial, imagens do perfil e caminho guiado até o WhatsApp. HTML, CSS e JavaScript sem framework, rastreadores ou dependências de execução.
+Landing page estática em português, com paleta de marfim, areia, cobre rosado e café. Atualizada em 17/10/2026 a partir da referência de cores enviada pela cliente. Direção editorial, imagens do perfil e caminho guiado até o WhatsApp. HTML, CSS e JavaScript sem framework, rastreadores ou dependências de execução.
 
 **Site:** https://pedrooeditor.github.io/inplantsorria/
 
@@ -44,9 +44,9 @@ O arquivo será criado em `dist/implansorria-mais.html`, com imagem, estilos e s
 
 ## Completar antes do lançamento
 
-A identidade, a profissional, a cidade e os canais vieram da captura de Instagram fornecida no briefing. Precisam de revisão pela clínica. O número configurado é **55 11 95451-0922** e o perfil é **@implansorriamais**.
+A cliente informou em 17/10/2026: **Implan Sorria Mais — Odontologia Especializada**, **Dra. Ana Paula Ferreira de Faria**, **CRO-SP 146379** e **(11) 95451-0922**. Esses dados estão na configuração, na apresentação da profissional, no contato e no rodapé. O perfil permanece **@implansorriamais**.
 
-Preencha `site.config.js` com CRO/UF e horários aprovados. O endereço e a busca no mapa usam a captura fornecida: Av. Marginal Direita, 420, Jardim Paulista, Barueri, SP. Campos vazios são omitidos. Revise tratamentos, textos, endereço e canais. Não foram inventados números de pacientes, avaliações, credenciais, preços ou resultados clínicos.
+Preencha `site.config.js` com os horários quando forem informados. O endereço e a busca no mapa usam a captura fornecida anteriormente: Av. Marginal Direita, 420, Jardim Paulista, Barueri, SP. Campos vazios são omitidos. Revise tratamentos, textos e endereço. Não foram inventados números de pacientes, avaliações, preços ou resultados clínicos.
 
 A foto principal é uma imagem gerada por IA para a proposta visual, identificada na página como ilustrativa. Ela não retrata uma paciente, profissional ou resultado da clínica. Consulte `ASSETS.md`.
 

@@ -15,3 +15,7 @@ Use case: photorealistic-natural. Asset type: large portrait hero photograph for
 ## Movimento e grafismos
 
 Arco de luz, órbitas, ilustrações de tratamento e monograma foram desenhados em SVG/CSS. As animações podem ser pausadas na abertura e respeitam a preferência de movimento reduzido do dispositivo. O monograma é uma proposta visual; não é apresentado como reprodução do arquivo oficial da marca.
+
+## Revisão de identidade — 17/10/2026
+
+Referência de cor solicitada pela cliente: https://escobarodontologia.com/ . Inspeção visual e de cores: branco, neutros claros e cobre rosado (#b27e67). A adaptação usa marfim #faf7f2, areia #f0e8df, cobre #b27e67, cobre escuro #92604c para botões e café #3b2d28 nos painéis. A estrutura e os grafismos continuam próprios do projeto. Nenhum texto, fotografia, logotipo, depoimento ou dado profissional da referência foi incorporado.

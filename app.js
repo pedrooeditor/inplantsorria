@@ -12,13 +12,21 @@
     window.dispatchEvent(new CustomEvent('implansorria:conversion', {detail: {action, ...detail}}));
   }
   $$('[data-location]').forEach(el => { el.textContent = config.location || 'Conheça nossa clínica'; });
-  $$('[data-professional]').forEach(el => { el.textContent = config.professional || 'Equipe Implansorria Mais'; });
+  $$('[data-professional]').forEach(el => { el.textContent = config.professional || 'Equipe Implan Sorria Mais'; });
   const instagram = safeHttps(config.instagram);
   $$('[data-instagram]').forEach(el => { if (instagram) el.href = instagram; else el.hidden = true; });
-  if (config.registration) {
-    $('#professional-registration').textContent = config.registration;
-    $('#professional-registration').hidden = false;
-  }
+  $$('[data-registration]').forEach(el => {
+    el.textContent = config.registration || '';
+    el.hidden = !config.registration;
+  });
+  const clinicPhone = String(config.whatsapp || '').replace(/\D/g, '');
+  $$('[data-phone]').forEach(el => {
+    const valid = /^\d{10,15}$/.test(clinicPhone);
+    el.hidden = !valid;
+    if (valid) el.href = `tel:+${clinicPhone}`;
+    else el.removeAttribute('href');
+  });
+  $$('[data-phone-label]').forEach(el => { el.textContent = config.phoneDisplay || clinicPhone; });
   const clinicInfo = $('#clinic-info');
   [config.address, config.hours].filter(Boolean).forEach(text => {
     const p = document.createElement('p'); p.textContent = text; clinicInfo.append(p);
@@ -97,7 +105,7 @@
     if (!ready) { whatsappLink.removeAttribute('href'); return; }
     const intention = getIntent() === 'Tirar uma dúvida' ? 'tirar uma dúvida antes de agendar' : 'consultar os horários para uma avaliação';
     const subject = topic === 'Quero orientação' ? 'Ainda não sei qual tratamento procurar e gostaria de orientação.' : `Tenho interesse em ${topic.toLowerCase()}.`;
-    const text = `Olá! Conheci a ${config.name || 'Implansorria Mais'} pelo site e gostaria de ${intention}. ${subject}`;
+    const text = `Olá! Conheci a ${config.name || 'Implan Sorria Mais'} pelo site e gostaria de ${intention}. ${subject}`;
     whatsappLink.href = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
   }
   function renderStep(step, focus = true) {

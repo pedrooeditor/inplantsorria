@@ -1,14 +1,15 @@
-/* Dados centralizados para revisão antes do lançamento.
- * Nome, cidade, profissional e canais abaixo vieram da captura do Instagram
- * fornecida pelo proprietário do projeto. Confirme-os com a clínica.
- * Não preencher credenciais, horários ou endereço com dados fictícios.
+/* Dados centralizados da clínica.
+ * Marca, profissional, CRO e telefone informados pela cliente em 17/10/2026.
+ * Endereço e Instagram vieram da referência fornecida anteriormente.
+ * Horários ainda não informados; campos vazios ficam ocultos.
  */
 window.CLINIC_CONFIG = Object.freeze({
-  name: 'Implansorria Mais',
+  name: 'Implan Sorria Mais',
   location: 'Barueri, SP',
-  professional: 'Dra. Ana Paula Faria',
-  registration: '',
+  professional: 'Dra. Ana Paula Ferreira de Faria',
+  registration: 'CRO-SP 146379',
   whatsapp: '5511954510922',
+  phoneDisplay: '(11) 95451-0922',
   instagram: 'https://www.instagram.com/implansorriamais/',
   address: 'Av. Marginal Direita, 420 · Jardim Paulista · Barueri, SP',
   hours: '',

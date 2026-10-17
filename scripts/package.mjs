@@ -11,8 +11,9 @@ html = html.replace(/<script defer src="site\.config\.js(?:\?[^"]*)?"><\/script>
 html = html.replace(/<script defer src="app\.js(?:\?[^"]*)?"><\/script>/, '');
 const mime = {webp:'image/webp',png:'image/png',svg:'image/svg+xml'};
 for (const path of new Set([...html.matchAll(/(?:src|href)="(assets\/[^"]+)"/g)].map(match => match[1]))) {
-  const data = (await readFile(resolve(root,path))).toString('base64');
-  html = html.replaceAll(`"${path}"`, `"data:${mime[path.split('.').pop()]};base64,${data}"`);
+  const filePath = path.split('?')[0];
+  const data = (await readFile(resolve(root,filePath))).toString('base64');
+  html = html.replaceAll(`"${path}"`, `"data:${mime[filePath.split('.').pop()]};base64,${data}"`);
 }
 html = html.replace('</body>', () => `<script>\n${config}\n${app}\n</script>\n</body>`);
 const output = resolve(process.argv[2] || resolve(root, 'dist/implansorria-mais.html'));
